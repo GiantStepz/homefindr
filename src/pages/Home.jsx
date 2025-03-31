@@ -1,7 +1,16 @@
-// src/pages/Home.jsx
 import React from 'react';
+import Navbar from '../components/Navbar';
+import SearchBar from '../components/SearchBar';
+import Filters from '../components/Filters';
+import { useNavigate } from 'react-router-dom';
 
 const Home = () => {
+  const navigate = useNavigate();
+
+  const handleSearch = () => {
+    navigate('/results');
+  };
+
   return (
     <div className="bg-white min-h-screen text-gray-900 font-sans">
       {/* NavBar */}
@@ -11,7 +20,7 @@ const Home = () => {
           <span className="text-orange-500">Findr</span>
         </h1>
         <nav className="space-x-6">
-          <a href="#" className="text-orange-500 border border-orange-500 px-3 py-1 rounded-md hover:bg-orange-50 transition">
+          <a href="/results" className="text-orange-500 border border-orange-500 px-3 py-1 rounded-md hover:bg-orange-50 transition">
             Search
           </a>
           <a href="#" className="text-cyan-500 border border-cyan-500 px-3 py-1 rounded-md hover:bg-cyan-50 transition">
@@ -28,6 +37,9 @@ const Home = () => {
         <h2 className="text-4xl md:text-5xl font-extrabold mb-6 leading-tight">
           Find your dream spot <br className="hidden sm:inline" /> near what you love
         </h2>
+        <p className="text-sm text-orange-500 mb-6 max-w-xl mx-auto">
+          "I want the one where you can see a KFC sign through the front window"
+        </p>
         <p className="text-lg text-gray-600 mb-8 max-w-xl mx-auto">
           Search by landmark proximity, draw your own zones, or just vibe your way through the map.
         </p>
@@ -38,7 +50,10 @@ const Home = () => {
             placeholder="Search by city, zip, or landmark..."
             className="w-full px-4 py-3 border border-gray-300 rounded-l-md focus:outline-none focus:ring-2 focus:ring-orange-400"
           />
-          <button className="bg-orange-500 text-white px-6 py-3 rounded-r-md hover:bg-orange-600 transition">
+          <button 
+	    className="bg-orange-500 text-white px-6 py-3 rounded-r-md hover:bg-orange-600 transition"
+	    onClick={handleSearch}
+	  >
             Search
           </button>
         </div>

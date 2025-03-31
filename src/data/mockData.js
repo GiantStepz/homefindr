@@ -1,0 +1,58 @@
+const mockData = [
+  {
+    title: "Modern Loft Downtown",
+    address: "123 Vibe St, Austin, TX",
+    price: 2250,
+    bedrooms: 2,
+    bathrooms: 2,
+    image: "https://source.unsplash.com/400x300/?apartment,modern",
+    nearby: ["Library", "Target", "Movie Theater"],
+  },
+  {
+    title: "Cozy Bungalow by the Park",
+    address: "456 Greenway Ln, Denver, CO",
+    price: 1750,
+    bedrooms: 3,
+    bathrooms: 1,
+    image: "https://source.unsplash.com/400x300/?house,cozy",
+    nearby: ["Fishing Spot", "Library"],
+  },
+  {
+    title: "High-Rise City View Apartment",
+    address: "789 Skyline Ave, New York, NY",
+    price: 3100,
+    bedrooms: 1,
+    bathrooms: 1,
+    image: "https://source.unsplash.com/400x300/?apartment,city",
+    nearby: ["Movie Theater", "Target"],
+  },
+  {
+    title: "Luxury Condo near Waterfront",
+    address: "101 Marina Blvd, Miami, FL",
+    price: 4500,
+    bedrooms: 2,
+    bathrooms: 2,
+    image: "https://source.unsplash.com/400x300/?condo,luxury",
+    nearby: ["Fishing Spot", "Library", "Movie Theater"],
+  },
+  {
+    title: "Spacious Family Home",
+    address: "202 Suburbia Dr, Raleigh, NC",
+    price: 2600,
+    bedrooms: 4,
+    bathrooms: 3,
+    image: "https://source.unsplash.com/400x300/?house,family",
+    nearby: ["Library", "Target", "Hospital"],
+  },
+  {
+    title: "Modern Studio for Rent",
+    address: "303 Compact Ln, San Francisco, CA",
+    price: 1900,
+    bedrooms: 1,
+    bathrooms: 1,
+    image: "https://source.unsplash.com/400x300/?studio,apartment",
+    nearby: ["Taco Bell", "Movie Theater"],
+  },
+];
+
+export default mockData;
